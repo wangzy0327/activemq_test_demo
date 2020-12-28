@@ -1,0 +1,13 @@
+server:
+  port: 8888    #微服务端口
+spring:
+  activemq:
+    broker-url: tcp://127.0.0.1:61616  #MQ服务器地址
+    user: admin
+    password: admin
+  jms:
+    pub-sub-domain: false   #默认false = Queue true = Topic
+
+
+#自己定义队列名称
+myqueue: boot-activemq-queue
